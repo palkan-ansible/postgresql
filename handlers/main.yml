@@ -1,0 +1,2 @@
+- name: Restart PostgreSQL
+  command: service postgresql restart
