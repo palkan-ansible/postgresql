@@ -14,6 +14,7 @@ Role Variables
 `defaults/main.yml`
 
 | Name                        | Default Value |  Description    |
+|-----------------------------|-----|---------------------------|
 | postgresql_version          | 9.4 | |
 | postgresql_hba              | pg_hba.conf.j2 | |
 | postgresql_config           | postgresql.conf.j2 | |
