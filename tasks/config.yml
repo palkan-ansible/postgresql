@@ -1,0 +1,7 @@
+- name: PostgreSQL | Copy valid pg_hba.conf
+  template: src={{ postgresql_hba }} dest=/etc/postgresql/{{ postgresql_version }}/main/pg_hba.conf
+
+- name: PostgreSQL | Copy valid postgresql.conf
+  template: src={{ postgresql_config }} dest=/etc/postgresql/{{ postgresql_version }}/main/postgresql.conf
+  notify:
+    - Restart PostgreSQL

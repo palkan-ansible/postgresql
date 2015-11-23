@@ -1,0 +1,6 @@
+- name: PostgreSQL | Ensure database is created
+  postgresql_user: name={{ postgresql_db_user }} password={{ postgresql_db_user_pass }} encrypted=no role_attr_flags=CREATEDB,NOSUPERUSER
+  sudo: yes
+  sudo_user: postgres
+  notify:
+    - Restart PostgreSQL

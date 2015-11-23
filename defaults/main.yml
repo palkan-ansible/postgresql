@@ -4,3 +4,4 @@ postgresql_config: postgresql.conf.j2
 postgresql_ram_shared: 512
 postgresql_ram_cache: 256
 postgresql_hstore: true
+postgresql_db_user: pg_admin
