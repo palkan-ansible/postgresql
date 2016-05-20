@@ -21,6 +21,7 @@ Role Variables
 | postgresql_ram_shared       | 512 | To use with default config |
 | postgresql_ram_cache        | 256 | To use with default config |
 | postgresql_db_user          | - | DB user name (_optional_) |
+| postgresql_db_user_flag   | CREATEDB,NOSUPERUSER | DB user privileges (_optional_) |
 | postgresql_db_user_pass          | - | DB user pass (plain) (_optional_) |
 | postgresql_databases          | - | List of databases to create (_optional_) | postgresql_hstore             | true | Whether to create hstore for databases |
 
