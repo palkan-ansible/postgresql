@@ -10,9 +10,3 @@
     owner: "{{ postgresql_db_user }}"
   with_items: postgresql_databases
   when: postgresql_databases is defined
-
-- name: PostgreSQL | Install hstore ext
-  sudo_user: postgres
-  shell: psql {{ item }} -c "CREATE EXTENSION IF NOT EXISTS hstore;"
-  with_items: postgresql_databases
-  when: postgresql_hstore and postgresql_databases is defined

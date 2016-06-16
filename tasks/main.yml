@@ -1,4 +1,8 @@
-- include: postgresql.yml tags=postgres_install
-- include: config.yml tags=postgres_config
-- include: user.yml tags=postgres_user
-- include: db.yml tags=postgres_db
+- include: postgresql.yml
+  tags: [postgres_install]
+- include: config.yml
+  tags: [postgres_config]
+- include: user.yml
+  tags: [postgres_user]
+- include: db.yml
+  tags: [postgres_db]
