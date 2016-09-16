@@ -3,5 +3,6 @@ postgresql_hba: pg_hba.conf.j2
 postgresql_config: postgresql.conf.j2
 postgresql_ram_shared: 512
 postgresql_ram_cache: 256
-postgresql_db_user: pg_admin
-postgresql_db_user_flags: "CREATEDB,NOSUPERUSER"
+# postgresql_db_user: pg_admin
+# postgresql_db_user_pass: supersecret123
+# postgresql_db_user_flags: "CREATEDB,NOSUPERUSER"
